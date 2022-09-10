@@ -8,7 +8,7 @@
 int main(void)
 {
    char alp1[] = "abcdefghijklmnopqrstuvwxyz";
-   char alp2[] = "ABCDEFGHIJKLMNOPQRSTUWXYZ";
+   char alp2[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    int i;
 
    for (i = 0; i < 26; i++)
