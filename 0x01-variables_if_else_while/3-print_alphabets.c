@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-   char alp1[] = "abcdefghijklmnopqrstuwxyz";
+   char alp1[] = "abcdefghijklmnopqrstuvwxyz";
    char alp2[] = "ABCDEFGHIJKLMNOPQRSTUWXYZ";
    int i;
 
