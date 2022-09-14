@@ -2,8 +2,8 @@
 
 /**
  * _islower - checks the lower
- *  character to check the case
- * between 0 and 1
+ * @c :  character to check the case
+ *return between 0 and 1
  */
 
 int _islower(int c)
