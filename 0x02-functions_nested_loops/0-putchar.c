@@ -1,7 +1,19 @@
 #include "main.h"
+
 /**
-* main - Prints _upchar
-*
+ * main - Prints _upchar
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+#include "main.h"
+
+/**
+
+ * main - Prints _upchar
+
+ *
 
  * Return: Always 0 (Success)
 
