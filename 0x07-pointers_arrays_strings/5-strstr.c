@@ -1,27 +1,29 @@
 #include "main.h"
 /**
- *_strpbrk- searches a string for any of a set of bytes.
- *@s:The null-terminated string to be scanned
- *@accept:he null-terminated string containing the characters to match.
- *
- *Return:Returns a pointer to the byte in s that matches
- * one of the bytes in accept, or NULL if no such byte is found
+ *_strstr-locates a substring
+ *@haystack:string to check occurence of needle
+ *@needle:string to be checked.
+ *Return:Returns a pointer to the beginning of the located
+ * substring, or NULL if the substring is not found.
  */
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	char *start = accept;
-
-	while (*s)
+	while (*haystack)
 	{
-		while (*accept)
+		char *i = haystack;
+		char *j = needle;
+
+		while (*haystack && *j && *haystack == *j)
 		{
-			if (*accept == *s)
-				return (s);
-			accept++;
+			haystack++;
+			j++;
 		}
-		accept = start;
-		s++;
+
+		if (!*j)
+			return (i);
+
+		haystack = i + 1;
 	}
-	return (NULL);
+	return ('\0');
 }
