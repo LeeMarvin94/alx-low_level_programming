@@ -1,1 +1,1 @@
-This repository is about hosting C programming files into the ALX SE programm
+This repository contains the folders and files related to the ALX SE program 
