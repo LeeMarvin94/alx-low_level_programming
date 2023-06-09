@@ -1,41 +1,46 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
- * main - Add positive numbers + } =
- *
- * @argc: number of parameters given to the program
- * @argv: array of pointers to the string of the given parameters
- *
- * Return: Always 0.
+ * isInteger - checks if s is an integer
+ * @s: string to check
+ * Return: 0 or 1
  */
-int main(int argc, char *argv[])
-{
-int i, sum = 0;
 
-/* If no number is passed as argument */
-if (argc == 1)
+int isInteger(const char *s)
 {
-printf("%d\n", 0);
-return (1);
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		if (s[i] < '0' || s[i] > '9')
+			return (1);
+		i++;
+	}
+	return (0);
 }
 
-/* Verifies all the given parameters are digits if throw an error */
-for (i = 1; i < argc; i++)
-{
-if (**(argv + i) < 48 || **(argv + i) > 57)
-{
-printf("Error\n");
-return (1);
-}
+/**
+ * main - adds positive numbers
+ * @argc: int
+ * @argv: list
+ * Return: 0
+ */
 
-if (atoi(argv[i]) > 0)
+int main(int argc, char const *argv[])
 {
-sum += atoi(argv[i]);
-}
+	int sum = 0;
 
-}
-/* Displaying of the result */
-printf("%d\n", sum);
+	while (--argc)
 
-return (0);
+	{
+		if (isInteger(argv[argc]))
+		{
+			printf("Error\n");
+			return (1);
+		}
+		sum += atoi(argv[argc]);
+	}
+	printf("%i\n", sum);
+	return (0);
 }
