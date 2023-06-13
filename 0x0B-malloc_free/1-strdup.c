@@ -13,6 +13,9 @@ char *_strdup(char *str)
 int i;
 int len_s = 0;
 char *ptr;
+
+if (str == NULL)
+return (NULL);
 /* Here I get the size of the given string */
 while (*(str + i) != '\0')
 {
