@@ -22,7 +22,7 @@ while (*(str + i) != '\0')
 len_s++;
 i++;
 }
-ptr = malloc(sizeof(char) * len_s + 1);
+ptr = malloc(sizeof(char) * len_s);
 if (ptr == NULL)
 return (NULL);
 /* Copying of the content of str in the newly allocated memory */
@@ -31,7 +31,7 @@ for (i = 0; i < len_s; i++)
 *(ptr + i) = *(str + i);
 }
 /* Bellow I add the terminated null caractere */
-*(ptr + i) = '\0';
+/*(ptr + i) = '\0';*/
 return (ptr);
 
 }
