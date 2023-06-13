@@ -10,7 +10,7 @@
  */
 char *_strdup(char *str)
 {
-int i;
+int i = 0;
 int len_s = 0;
 char *ptr;
 
@@ -31,7 +31,7 @@ for (i = 0; i < len_s; i++)
 *(ptr + i) = *(str + i);
 }
 /* Bellow I add the terminated null caractere */
-/*(ptr + i) = '\0';*/
+*(ptr + i) = '\0';
 return (ptr);
 
 }
