@@ -22,7 +22,7 @@ while (*(str + i) != '\0')
 len_s++;
 i++;
 }
-ptr = malloc(sizeof(char) * len_s);
+ptr = malloc(sizeof(char) * len_s + 1);
 if (ptr == NULL)
 return (NULL);
 /* Copying of the content of str in the newly allocated memory */
