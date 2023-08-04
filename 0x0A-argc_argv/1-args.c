@@ -4,7 +4,7 @@
  * main - Prints the number of arguments passed to it + } =
  *
  * @argc: Number of arguments passed to
- * @argv: array of pointers to the arguments 
+ * @argv: array of pointers to the arguments
  * Return: Always 0
  */
 
