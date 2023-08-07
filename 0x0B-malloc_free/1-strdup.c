@@ -23,7 +23,7 @@ count++;
 i++;
 }
 
-ptr_c = malloc(sizeof(char) * count + i);
+ptr_c = malloc(sizeof(char) * count + 1);
 if (ptr_c == NULL)
 return (NULL);
 
