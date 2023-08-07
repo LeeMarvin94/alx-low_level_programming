@@ -23,7 +23,7 @@ count++;
 i++;
 }
 
-ptr_c = malloc(sizeof(char) * count);
+ptr_c = malloc(sizeof(char) * count + i);
 if (ptr_c == NULL)
 return (NULL);
 
@@ -31,5 +31,6 @@ for (i = 0; i < count; i++)
 {
 ptr_c[i] = str[i];
 }
+ptr_c[i] = '\0';
 return (ptr_c);
 }
