@@ -1,12 +1,11 @@
 #include"main.h"
-#include<stdio.h>
 #include<stdlib.h>
 
 /**
  * _strdup - Returns a pointer to a newly allocated memory space + } =
  *
  * @str: content of the pointer to be copied
- * Return: A pointer or null
+ * Return: A pointer or NULL
  */
 
 char *_strdup(char *str)
