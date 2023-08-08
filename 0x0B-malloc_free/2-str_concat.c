@@ -20,9 +20,9 @@ char *ptr_s;
 if (s1 == NULL || s2 == NULL)
 {
 if (s1 == NULL)
-*s1 = '\0';
+s1 = "";
 else
-*s2 = '\0';
+s2 = "";
 }
 while (s1[i] != '\0')
 {
