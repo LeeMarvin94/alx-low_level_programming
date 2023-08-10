@@ -34,9 +34,17 @@ return (NULL);
 for (i = 0; i < size_s1; i++)
 ptr_char[i] = s1[i];
 j = 0;
+
+if (n  >= size_s2)
+{
+for (i = size_s1; j < size_s2; i++)
+ptr_char[i] = s2[j++];
+}
+else
+{
 for (i = size_s1; j < n; i++)
 ptr_char[i] = s2[j++];
+}
 ptr_char[i] = '\0';
-
 return (ptr_char);
 }
