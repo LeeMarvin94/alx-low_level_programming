@@ -2,7 +2,7 @@
 #define dog_h
 
 /**
- * struct dog - Dog structure
+ * struct dog - Dog structure data type
  * @name: represents the name of the Dog
  * @age: Age of the dog
  * @owner: Owner of the dog
@@ -16,5 +16,6 @@ char *owner;
 
 };
 
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
