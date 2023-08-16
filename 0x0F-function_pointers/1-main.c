@@ -1,6 +1,5 @@
-
-#include"function_pointers.h"
-#include<stdio.h>
+#include <stdio.h>
+#include "function_pointers.h"
 
 /**
  * print_elem - prints an integer
@@ -8,7 +7,6 @@
  *
  * Return: Nothing.
  */
-
 void print_elem(int elem)
 {
     printf("%d\n", elem);
