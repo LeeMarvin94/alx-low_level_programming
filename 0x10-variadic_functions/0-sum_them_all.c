@@ -1,6 +1,4 @@
 #include"variadic_functions.h"
-#include <stdarg.h>
-#include <stdio.h>
 /**
  * sum_them_all - sum its own parameters + } =
  * @n: number of arguments
@@ -27,6 +25,7 @@ for (count = 0; count < n; count++)
 somme += va_arg(variadic_list, int);
 }
 va_end(variadic_list);
+
 return (somme);
 }
 
