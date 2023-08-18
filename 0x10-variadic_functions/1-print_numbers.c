@@ -26,8 +26,7 @@ printf("%s", separator);
 }
 
 }
-
-puts(" ");
+printf("\n");
 
 va_end(variadic_list);
 }
