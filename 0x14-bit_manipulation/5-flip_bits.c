@@ -2,8 +2,8 @@
 /**
  * flip_bits - returns the number of bits you would need to
  * flip to get from one number to another
- * @num1: first integer
- * @num2: second integer
+ * @n: first integer
+ * @m: second integer
  * Return: the number of bits to be flipped
  */
 
