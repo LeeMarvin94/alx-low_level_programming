@@ -12,7 +12,7 @@ size_t count = 0;
 
 /* temp = h; */
 
-while (h->next != NULL)
+while (h != NULL)
 {
 
 if (h->str == NULL)
